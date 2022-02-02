@@ -1,0 +1,61 @@
+---
+title: "latihanQuiz"
+output: html_document
+---
+
+```{r}
+# untuk menunjukkan entry yang ada pada vektor A tidak terdapat pada vektor B
+A = c(3,6,9,12) 
+B = c(4,6,7,8)
+setdiff(A, B)
+```
+
+```{r}
+#data frame memilih data dengan Jenis Kelamin ‘Lak-laki’ dan dan Pekerjaan ‘Dosen’
+df <- data.frame("No" = c("1","2","3","4"), "Jenis_Kelamin" = c("Laki - laki", "Perempuan", "Laki - laki", "Laki - laki"), "Pekerjaan" = c("Dosen", "Data Scientist", "Dosen", "Guru"), "Pendidikan_terakhir" = c("S2", "S3", "S3", "S2"))
+df
+subset(df, Jenis_Kelamin == "Laki - laki" & Pekerjaan == "Dosen")
+```
+
+```{r}
+# Menampilkan data NA
+A = c(2, NA, 3)
+sum(is.na(A))
+```
+
+
+Ukuran keragaman 2 peubah/variabel/feature pada suatu data set dapat ditinjau dengan cara : Melihat grafik kovariansi
+
+
+Ukuran variabilitas dari suatu data dapat ditinjau melalui :
+Jangkauan, jangkauan antar kuartil, variansi, standar deviasi, dan koefisien variasi
+
+
+```{r}
+# Menggabungkan beberapa data frame
+library("plyr")  
+A = data.frame(kolom1 = 1:2)
+B = data.frame(kolom2 = 3)
+c = rbind.fill(A, B)
+c
+```
+
+```{r}
+# Menampilkan data yang tidak habis dibagi 2
+numbers <- seq(1, 10)
+for (number in numbers) {
+	if (number %% 2){
+		print(number)
+	}
+}
+```
+
+metode berikut ini yang menjadikan vektor memiliki nilai berulang : rep()
+
+yang digunakan untuk mendapatkan quantil dari suatu dataset :  quantile()
+
+
+```{r}
+
+```
+

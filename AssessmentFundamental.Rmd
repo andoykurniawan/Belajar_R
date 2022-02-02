@@ -1,0 +1,84 @@
+---
+title: "Assesment Fundamental"
+output: html_document
+---
+
+```{r}
+df = data.frame(a = c(1,2,3), b = c(4,5,6), c = c(7,8,9))
+df[,2]
+df[1,1]
+df[3,2]
+```
+
+```{r}
+x <- c("red","blue","yellow","orange","green","purple")
+y <- c(x[2], x[3], x[4])
+y
+```
+
+
+```{r}
+x <- as.factor(c("grape", "apples", "pear", "cherry", "mango", "panda"))
+x
+x[6] <- "apples" 
+x
+```
+
+
+```{r}
+x = 3 
+y = 3
+
+add_numbers <- function(x, y) {
+  	x + y
+}
+add_numbers(x, y)
+```
+
+
+```{r}
+df <- c(1,2,3,4,5,6,NA,7,8,9,NA)
+df
+mean_replace <- function(df){
+  df[is.na(df)] <- mean(df, na.rm=TRUE)
+  return(df)}
+df <- mean_replace(df)
+df
+```
+
+
+```{r}
+```
+
+
+```{r}
+```
+
+
+```{r}
+```
+
+
+```{r}
+```
+
+
+```{r}
+```
+
+
+```{r}
+```
+
+
+```{r}
+```
+
+
+```{r}
+```
+
+
+```{r}
+```
+
